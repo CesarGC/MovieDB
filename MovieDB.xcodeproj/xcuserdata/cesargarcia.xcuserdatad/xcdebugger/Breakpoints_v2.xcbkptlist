@@ -174,8 +174,8 @@
             filePath = "MovieDB/ViewControllers/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "didReceiveError(message:title:)"
             landmarkType = "7">
             <Locations>
@@ -241,6 +241,22 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A5F4F9C-58E6-48A6-99CA-99FE4322D31D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewControllers/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "hideActivityIndicator()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

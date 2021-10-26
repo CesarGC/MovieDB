@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginViewModelDelegate {
+class LoginViewController: BaseViewController, LoginViewModelDelegate {
 
     @IBOutlet weak var lblMessageError: UILabel!
     @IBOutlet weak var txtFieldPass: UITextField!
@@ -22,16 +22,19 @@ class LoginViewController: UIViewController, LoginViewModelDelegate {
     }
 
     @IBAction func actionSignIn(_ sender: Any) {
+        self.showActivityIndicator()
         self.viewModel.loginUser(self.txtFieldUserName.text!, self.txtFieldPass.text!)
     }
     
     func didReceiveLoginResponse() {
         let viewController = UINavigationController.init(rootViewController: MainViewController.instantiate(from: .Main))
+        self.hideActivityIndicator()
         UIApplication.setRootView(viewController)
     }
     
     func didReceiveError(message: String, title: String) {
         DispatchQueue.main.async {
+            self.hideActivityIndicator()
             self.lblMessageError.text = message
         }
     }

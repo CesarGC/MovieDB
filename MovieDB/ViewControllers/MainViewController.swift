@@ -7,23 +7,26 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: ListCollectionBaseViewController {
 
+    @IBOutlet weak var segmentControl: UISegmentedControl!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.actionSegmentControlOptions(self.segmentControl)
+    }
+//    showSegueProfile
+    
+    override func configViewModel() {
+        self.viewModel = MediaListViewModel(self)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func actionSegmentControlOptions(_ sender: UISegmentedControl) {
+        self.showActivityIndicator()
+        (self.viewModel as! MediaListViewModel).getMovies(Category(typeCategory: TypeCategory(rawValue: sender.selectedSegmentIndex)!))
     }
-    */
-
+    
+    @IBAction func actionBarOptions(_ sender: Any) {
+    }
 }

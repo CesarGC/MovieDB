@@ -24,4 +24,7 @@ struct ApiEndPoints {
     static let token = base_url + "authentication/token/new?api_key=\(api_key)"
     static let session = base_url + "authentication/session/new?api_key=\(api_key)"
     static let login = base_url + "authentication/token/validate_with_login?api_key=\(api_key)"
+    static let base_list_movie = base_url + "%@?api_key=\(api_key)&language=en-US&page=1"
+    static let imageBaseURL = "https://image.tmdb.org/t/p/w500/"
+    
 }

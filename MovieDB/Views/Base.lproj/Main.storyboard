@@ -53,6 +53,9 @@
                                 </segments>
                                 <color key="tintColor" red="0.12609717249999999" green="0.18295663600000001" blue="0.37815260890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="actionSegmentControlOptions:" destination="vfr-RI-gL8" eventType="valueChanged" id="5nH-el-Fig"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sJO-yK-VTK"/>
@@ -70,20 +73,25 @@
                     <navigationItem key="navigationItem" title="TV Shows &amp; Movies" id="Cdn-jX-6wa">
                         <barButtonItem key="rightBarButtonItem" image="person" catalog="system" id="9PY-pl-O2S">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="actionBarOptions:" destination="vfr-RI-gL8" id="pGL-in-Tgb"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="mJW-T9-BFS" kind="presentation" id="58Y-la-xAJ"/>
+                        <outlet property="collectionView" destination="N6b-Am-r5J" id="9J4-ga-s8V"/>
+                        <outlet property="segmentControl" destination="mMm-90-2ot" id="MRa-pE-8wd"/>
+                        <segue destination="mJW-T9-BFS" kind="presentation" identifier="showSegueProfile" id="58Y-la-xAJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wfZ-ko-Wzb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-600" y="-64"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="QOv-cu-25A">
             <objects>
-                <viewController id="mJW-T9-BFS" sceneMemberID="viewController">
+                <viewController id="mJW-T9-BFS" customClass="ProfileViewController" customModule="MovieDB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YBh-T0-Q05">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,6 +148,9 @@ EFVzZXJOYW1lA
                             <constraint firstItem="HYu-wT-NCj" firstAttribute="trailing" secondItem="BBi-n3-BeA" secondAttribute="trailing" id="nvu-im-xz7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="BBi-n3-BeA" id="bpY-xA-dvh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0P5-wW-XuE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
