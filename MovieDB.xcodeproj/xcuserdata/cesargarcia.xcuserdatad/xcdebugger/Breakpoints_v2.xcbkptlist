@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C118621A-15E0-4A89-B656-4684044104AC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13B66D9B-7089-459C-A017-E442CAE4A5DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13B66D9B-7089-459C-A017-E442CAE4A5DA - 5a07092a344a5be1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;MovieDB.LoginResponse&gt;) -&gt; () in MovieDB.LoginViewModel.loginUser(Swift.String, Swift.String) -&gt; ()"
+                  moduleName = "MovieDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cesargarcia/Documents/MovieDBApp/MovieDB/MovieDB/ViewModels/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "589">
+               </Location>
+               <Location
+                  uuid = "13B66D9B-7089-459C-A017-E442CAE4A5DA - 6752555f6c003a47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;MovieDB.LoginResponse&gt;) -&gt; () in closure #1 (Swift.Optional&lt;MovieDB.LoginResponse&gt;) -&gt; () in MovieDB.LoginViewModel.loginUser(Swift.String, Swift.String) -&gt; ()"
+                  moduleName = "MovieDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cesargarcia/Documents/MovieDBApp/MovieDB/MovieDB/ViewModels/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "418">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C29C4DE2-F7BC-4575-8BF1-BBEB6D17D62D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22BD055F-6837-41B6-B586-CE50707CCBEF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35F6173A-1035-4A77-8C30-0F8319F3AA43"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11DA450B-4029-447A-81FE-E68D76B5F1A2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F6BBC99-0F8A-430E-956C-C38869D5950A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F6BBC99-0F8A-430E-956C-C38869D5950A - 6752555f6c003a47"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;MovieDB.LoginResponse&gt;) -&gt; () in closure #1 (Swift.Optional&lt;MovieDB.LoginResponse&gt;) -&gt; () in MovieDB.LoginViewModel.loginUser(Swift.String, Swift.String) -&gt; ()"
+                  moduleName = "MovieDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cesargarcia/Documents/MovieDBApp/MovieDB/MovieDB/ViewModels/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "7F6BBC99-0F8A-430E-956C-C38869D5950A - 3eb4e94e83664ecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;MovieDB.SessionResponse&gt;) -&gt; () in closure #1 (Swift.Optional&lt;MovieDB.LoginResponse&gt;) -&gt; () in closure #1 (Swift.Optional&lt;MovieDB.LoginResponse&gt;) -&gt; () in MovieDB.LoginViewModel.loginUser(Swift.String, Swift.String) -&gt; ()"
+                  moduleName = "MovieDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cesargarcia/Documents/MovieDBApp/MovieDB/MovieDB/ViewModels/LoginViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "330">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFD5DCB4-B282-481F-A3FB-ED94CB898753"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewControllers/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "didReceiveError(message:title:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FFD5DCB4-B282-481F-A3FB-ED94CB898753 - 32718504a6c0a88e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MovieDB.LoginViewController.didReceiveError(message: Swift.String, title: Swift.String) -&gt; ()"
+                  moduleName = "MovieDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cesargarcia/Documents/MovieDBApp/MovieDB/MovieDB/ViewControllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "FFD5DCB4-B282-481F-A3FB-ED94CB898753 - ff13e1bf5af08a21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in MovieDB.LoginViewController.didReceiveError(message: Swift.String, title: Swift.String) -&gt; ()"
+                  moduleName = "MovieDB"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cesargarcia/Documents/MovieDBApp/MovieDB/MovieDB/ViewControllers/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3827C77-10B0-4660-9A11-981F57088C55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/Networking/MovieDBManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "loginUser(loginRequest:completion:onError:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96CFE2F9-4727-4290-AC54-40EF366F724C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieDB/ViewModels/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loginUser(_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
