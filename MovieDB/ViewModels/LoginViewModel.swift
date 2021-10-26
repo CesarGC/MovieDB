@@ -56,5 +56,5 @@ struct LoginViewModel {
         UserDefaults.standard.setLoggedIn(value: true)
         UserDefaults.standard.synchronize()
     }
-
+    
 }

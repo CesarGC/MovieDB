@@ -8,7 +8,7 @@
 import UIKit
 
 class MediaCollectionViewCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var roundedView: UIView!
     
     @IBOutlet weak var lblOverview: UILabel!
@@ -22,6 +22,7 @@ class MediaCollectionViewCell: UICollectionViewCell {
             DispatchQueue.main.async {
                 self.lblTitle.text = self.media?.title
                 self.lblOverview.text = self.media?.overview
+                self.lblReleaseDate.text = self.media?.releaseDate
                 self.imgMovie.url("\(ApiEndPoints.imageBaseURL)\(self.media?.image ?? "")")
                 self.lblVoteAverage.text = "\(self.media?.vote ?? 0.0)"
             }
@@ -30,7 +31,10 @@ class MediaCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.imgMovie.image = nil
+        self.configRoundedView()
+    }
+    
+    func configRoundedView() {
         self.roundedView.clipsToBounds = true
         self.roundedView.layer.cornerRadius = 20
         
@@ -41,7 +45,6 @@ class MediaCollectionViewCell: UICollectionViewCell {
         self.roundedView.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: .allCorners, cornerRadii: CGSize(width: 8, height: 8)).cgPath
         self.roundedView.layer.shouldRasterize = true
         self.roundedView.layer.rasterizationScale = UIScreen.main.scale
-        // Initialization code
     }
     
     override func prepareForReuse() {

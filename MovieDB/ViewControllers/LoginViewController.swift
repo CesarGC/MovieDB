@@ -7,24 +7,27 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController, LoginViewModelDelegate {
-
+class LoginViewController: BaseViewController {
+    
     @IBOutlet weak var lblMessageError: UILabel!
     @IBOutlet weak var txtFieldPass: UITextField!
     @IBOutlet weak var txtFieldUserName: UITextField!
     
     var viewModel: LoginViewModel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel = LoginViewModel(delegate: self)
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func actionSignIn(_ sender: Any) {
         self.showActivityIndicator()
         self.viewModel.loginUser(self.txtFieldUserName.text!, self.txtFieldPass.text!)
     }
+}
+
+extension LoginViewController: LoginViewModelDelegate {
     
     func didReceiveLoginResponse() {
         let viewController = UINavigationController.init(rootViewController: MainViewController.instantiate(from: .Main))
@@ -38,5 +41,4 @@ class LoginViewController: BaseViewController, LoginViewModelDelegate {
             self.lblMessageError.text = message
         }
     }
-    
 }

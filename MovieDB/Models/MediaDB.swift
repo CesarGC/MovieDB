@@ -67,4 +67,5 @@ struct MediaDB: Decodable {
         
         vote = try? container.decode(Float.self, forKey: .vote)
     }
+    
 }

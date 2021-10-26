@@ -8,23 +8,25 @@
 import Foundation
 
 class MediaListViewModel : BaseListViewModel {
-    var delegate : BaseListViewModelDelegate?
 
     override init(_ delegate: BaseListViewModelDelegate) {
         super.init(delegate)
         self.delegate = delegate
     }
     
-    func getMovies(_ category: Category) {
-        self.apiService.getMediaList(category: category) { (response) in
-            self.setMoviesList(newList: response?.results)
-        } onError: { (error) in
-            self.setMoviesList(newList: nil)
-            self.delegate?.didReceiveErrorInfo(error: error)
-        }
-    }
-    
     override func refreshData() {
         self.delegate?.didReceiveMovieInfo()
     }
+    
+    func logOut(completion: @escaping
+                    () -> Void) {
+        UserDefaults.standard.removeObject(forKey: UserDefaultKeys.isLoggedIn.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultKeys.userName.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultKeys.sessionID.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultKeys.password.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultKeys.tokeRequest.rawValue)
+        UserDefaults.standard.synchronize()
+        completion()
+    }
+    
 }

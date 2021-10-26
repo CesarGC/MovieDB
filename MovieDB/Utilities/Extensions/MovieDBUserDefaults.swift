@@ -49,11 +49,12 @@ extension UserDefaults {
         return ""
     }
     
-    enum UserDefaultKeys: String {
-        case isLoggedIn = "login_flag"
-        case userName = "user_name"
-        case sessionID = "user_session_id"
-        case password = "password_name"
-        case tokeRequest = "token_request"
-    }
+}
+
+enum UserDefaultKeys: String {
+    case isLoggedIn = "login_flag"
+    case userName = "user_name"
+    case sessionID = "user_session_id"
+    case password = "password_name"
+    case tokeRequest = "token_request"
 }

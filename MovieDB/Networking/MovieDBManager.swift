@@ -8,6 +8,7 @@
 import Foundation
 
 struct MovieDBManager {
+    
     func loginUser(loginRequest: LoginRequest, completion: @escaping
                     (_ result:LoginResponse?) -> Void, onError: @escaping (Error) -> Void) {
         let loginUrl = URL(string: ApiEndPoints.login)!
@@ -43,7 +44,7 @@ struct MovieDBManager {
             let sessionPostBody = try JSONEncoder().encode(sessionRequest)
             httpUtility.postApiData(requestURL: sessionUrl, requestBody: sessionPostBody, resultType: SessionResponse.self) { (response, error) in
                 if(error == nil) {
-                _ = completion(response)
+                    _ = completion(response)
                 }
             } onError: { (error) in
                 onError(error)
@@ -52,10 +53,15 @@ struct MovieDBManager {
             onError(error)
         }
     }
+    
     func getMediaList(category: Category, completion: @escaping
-                    (_ result: MediaResponse?) -> Void, onError: @escaping (Error) -> Void) {
+                        (_ result: MediaResponse?) -> Void, onError: @escaping (Error) -> Void) {
         let categoryString = category.typeMedia.rawValue + category.typeMediaList.rawValue
-        let urlString = String(format: ApiEndPoints.base_list_movie, categoryString)
+        var urlString = String(format: ApiEndPoints.base_list_movie, categoryString)
+        if(category.type == .favorite) {
+            let sessionID = UserDefaults.standard.getSessionID()
+            urlString = ApiEndPoints.favorites_shows + sessionID
+        }
         let loginUrl = URL(string: urlString)!
         let httpUtility = HttpUtility()
         httpUtility.getApiData(requestURL: loginUrl, requestType: MediaResponse.self) { (response) in
@@ -64,4 +70,18 @@ struct MovieDBManager {
             onError(error)
         }
     }
+    
+    func getUserInfo(completion: @escaping
+                        (_ result: User?) -> Void, onError: @escaping (Error) -> Void) {
+        let sessionID = UserDefaults.standard.getSessionID()
+        let urlString = ApiEndPoints.user_info + sessionID
+        let loginUrl = URL(string: urlString)!
+        let httpUtility = HttpUtility()
+        httpUtility.getApiData(requestURL: loginUrl, requestType: User.self) { (response) in
+            _ = completion(response)
+        } onError: { (error) in
+            onError(error)
+        }
+    }
+    
 }

@@ -14,21 +14,28 @@ protocol BaseListViewModelDelegate {
 
 class BaseListViewModel {
     
+    var delegate : BaseListViewModelDelegate?
     private(set) var listMovies: [MediaDB]! {
         didSet {
             self.refreshData()
         }
     }
-    var apiService: MovieDBManager!
+    private(set) var apiService: MovieDBManager!
     
     init(_ delegate: BaseListViewModelDelegate) {
         self.apiService = MovieDBManager()
-//        self.delegate = delegate
-//        self.getMovies(0)
     }
     
     func refreshData() {
-        
+    }
+    
+    func getMovies(_ category: Category) {
+        self.apiService.getMediaList(category: category) { (response) in
+            self.setMoviesList(newList: response?.results)
+        } onError: { (error) in
+            self.setMoviesList(newList: nil)
+            self.delegate?.didReceiveErrorInfo(error: error)
+        }
     }
     
     func setMoviesList(newList: [MediaDB]!) {

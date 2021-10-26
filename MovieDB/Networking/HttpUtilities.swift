@@ -8,6 +8,7 @@
 import Foundation
 
 struct HttpUtility {
+    
     func getApiData<T:Decodable>(requestURL: URL, requestType: T.Type, completionHandler:@escaping(_ result: T?) -> Void, onError: @escaping (Error) -> Void) {
         URLSession.shared.dataTask(with: requestURL) { (responseData, httpUrlResponse, error) in
             if(error == nil && responseData != nil && responseData?.count != 0) {

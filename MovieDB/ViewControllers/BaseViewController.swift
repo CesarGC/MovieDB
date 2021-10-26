@@ -14,6 +14,10 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupUI()
+    }
+    
+    func setupUI() {
     }
     
     func showActivityIndicator() {
@@ -44,7 +48,6 @@ class BaseViewController: UIViewController {
     
     func hideActivityIndicator() {
         if(self.loadingView != nil) {
-            
             UIView.animate(withDuration: 1.0, delay: 0.0, options: UIView.AnimationOptions.curveLinear, animations: {
                     self.loadingView.alpha = 0.0
                 }) { completion in
@@ -52,16 +55,19 @@ class BaseViewController: UIViewController {
                 self.spinner = nil
                 self.loadingView = nil
             }
-            
         }
     }
     
     func showAlertController(title: String, message: String) {
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction.init(title: "Ok", style: .default) { (action) in
+        let action = UIAlertAction.init(title: Constants.OKAlertTitle, style: .default) { (action) in
             
         }
         alert.addAction(action)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func presentControllerWithSegueIdentifier(identifier: String) {
+        self.performSegue(withIdentifier: identifier, sender: nil)
     }
 }
